@@ -1,0 +1,83 @@
+body{
+    background-color: rgb(17, 17, 51);
+    color: rgb(231, 230, 252);
+    text-align: center;
+    background-image: url(https://wallpapers.com/images/hd/minimalist-aesthetic-cat-with-scarf-k3zbay4wwczvdkm7.jpg);
+    background-attachment: fixed;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+fieldset{
+    display: block;
+    /* padding: 15px 200; */
+    background: #4e748d;
+    opacity: 100%;
+    border: none;
+    border-radius: 0.25rem;
+    border-bottom: 5px solid #2d4c66;
+    margin: 3px;
+
+}
+
+label{
+   display: block;
+   margin: 9px 0;
+   font-family:Tahoma;
+   font-size: 16px;
+   text-align: left;
+}
+
+ form{
+    margin:0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 64vw;
+    padding:0 0 2em 0;
+
+}
+
+
+legend{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    text-align: justify;
+}
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 50px;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+input[type="submit"]{
+    background-color:#4e748d ;
+    border-color: white;
+    color: white;
+    width: 40%;
+    margin: 1em auto;
+    height: 60px;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 0.25rem;
+    border-bottom: 5px solid #2d4c66;
+
+}
+input, textarea{
+    background-color: #679bbd;
+    border: 1px solid #556170;
+    color: #dceeff;
+    min-width:2em;
+}
+input, textarea, select{
+    width:100%;
+    margin: 6px 0 0 0;
+}
+.inline{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+
+} 

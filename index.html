@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+ <body>
+    <h1 id="title">Cats Survey Form </h1>
+    <p id="description">This is a survey to collect data about Cats</p>
+    <form id="survey-form" action="freecodecamp.com">
+        <fieldset>
+            <legend>
+            <b>Cat Information</b>
+        </legend>
+            <label for="name" id="name-label"> Cat Name 
+                <input type="text" name="cat-name" id="name" placeholder="Enter your cat's name" required>
+            </label>
+            
+            <label for="number" id="number-label">Cat's Age
+                 <input type="number" name="cat-age" placeholder="Cat's age" id="number" min="1" max="25">
+            </label>
+            <label for="dropdown" id="cat-gender"> Cat Gender
+                <select name="catgender" id="dropdown">
+                    <option>(select an option)</option>
+                    <option value="1">Female</option>
+                    <option value="2">Male</option>
+                </select>
+            </label>
+
+            <label for="breed">Cat's Breed
+                <select name="cat-breed" id="breed">
+                    <option>(select an option)</option>
+                    <option value="1">Mixed breed</option>
+                    <option value="2">pure breed</option>
+                    <option value="3">Unknown</option>
+                </select>
+            </label>
+            <label for="steril"> Is your cat sterilized?
+                <input class="inline" type="radio" value="1" name="cat-steril" id="steril">Yes
+                <input class="inline" type="radio" value="2" name="cat-steril" id="notSteril">No
+            </label>
+        </fieldset>
+        
+        <fieldset>
+            <legend> <b>Cat Personality Criteria</b></legend>    
+            <label for="catPerso">Select your cat personality criterias:</label> 
+
+            <label for="catPerso"><input class="inline" type="checkbox" name="cat-calm" id="catPerso" value="1">Calm</label>
+
+            <label for="catPerso"><input class="inline" type="checkbox" name="cat-aggressive" id="catPerso" value="2">Aggressive</label>
+
+            <label for="catPerso""><input class="inline" type="checkbox" name="cat-joyful" id="catPerso" value="3">Joyful</label>
+
+            <label for="catPerso"><input class="inline" type="checkbox" name="cat-calm" id="catPerso" value="4">grumpy</label>
+
+            <label for="catPerso"><input class="inline" type="checkbox" name="cat-aggressive" id="catPerso" value="5">curious</label>
+
+            <label for="catPerso"><input class="inline" type="checkbox" name="cat-joyful" id="catPerso" value="6">friendly</label>  
+        </fieldset>
+
+        <fieldset>
+            <legend><b>Share your cat's picture</b></legend>
+            <label for="catPicture">Upload a picture of your cat
+                <input type="file" name="cat-picture" id="catPicture">
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend><b>More about your cat</b></legend>
+            <label for="textarea">Tell us more about your cat
+                <textarea name="about" id="textarea" cols="30" rows="3" placeholder="my cat's is..."></textarea>         
+            </label>
+        </fieldset>
+
+        <label for="email" id="email-label">Owner's Email
+            <input type="email" id="email" name="Owner-email" placeholder="Enter your Email" required >
+        </label>
+
+        <input type="submit" value="Submit" id="submit">
+
+    </form>
+ </body>
+</html>
